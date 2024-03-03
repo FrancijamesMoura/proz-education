@@ -13,8 +13,8 @@
 
     <nav>
         <a href="./page-inicial.html" class="btn btn1">Início</a>
-        <a href="./index.html" class="btn btn2">Qr Code</a>
-        <a href="#" class="btn btn3">Conversor de Moedas</a>
+        <a href="./qr-code.html" class="btn btn2">Qr Code</a>
+        <a href="./conversor.html" class="btn btn3">Conversor de Moedas</a>
         <a href="#" class="btn btn4">Criptografador</a>
         <a href="./contact.html" class="btn btn5">Contato</a>
     </nav>
@@ -23,30 +23,37 @@
 
         <h1 class="h1-form">Fale Conosco</h1>
         
-        <form action="#" method="post" enctype="multipart/form-data">
+        <form action="https://formsubmit.co/dev1000grau@outlook.com" method="post" enctype="multipart/form-data">
             
             <label>
                 <span><i class="icon icon-user-1"></i> Nome</span>
-                <input type="text" name="nome" required="">
+                <input type="text" name="nome" placeholder="Digite seu nome" required>
             </label>
             
             <label>
                 <span><i class="icon icon-email"></i> E-mail</span>
-                <input type="text" name="email" class="fade_8S">
+                <input type="email" name="email" placeholder="Digite seu E-mail" class="fade_8S">
             </label>
 
             <label>
                 <span><i class="icon icon-flag"></i> Assunto</span>
-                <input type="text" name="assunto" required="">
+                <input type="text" name="assunto" placeholder="Digite seu assunto" required="">
             </label>
             
             <label>
                 <span><i class="icon icon-comment"></i> Mensagem</span>
-                 <textarea name="mensagem" rows="3" required=""></textarea> 
+                 <textarea name="mensagem" rows="3" placeholder="Digite sua mensagem" required=""></textarea> 
             </label>
-           
-            <input type="hidden" name="acao" value="enviar" />
-            <button id="btn-form" class="btn-envia" title="Enviar"><b class="icon icon-paper-plane-o"> Enviar</b></button>
+
+            <input type="hidden" name="_subject" value="Novo Contato!" />
+            <input type="text" name="_honey" style="display:none" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input 
+            type="hidden" 
+            name="_next" 
+            value="http://127.0.0.1:5500/page-inicial.html"
+            >
+            <button id="btn-form" class="btn-envia" href="./page-inicial.html" type="submit" title="Enviar"><b class="icon icon-paper-plane-o"> Enviar</b></button>
 
         
         </form>

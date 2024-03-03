@@ -1,3 +1,6 @@
+
+/* JS QR CODE*/
+
 const container = document.querySelector ('.container'),
 qrInput = container.querySelector('.form input'),
 generateBtn = container.querySelector('.form button'),
@@ -22,5 +25,8 @@ qrInput.addEventListener('keyup', () => {
         container.classList.remove('active');
     }
 })
+
+
+
 
 
