@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+
+    
+    
+    <title>Criptografador de Mensagens</title>
+    
+</head>
+
+<body>
+    <main>
+        <nav class="main-convert">
+            <a href="./page-inicial.html" class="btn btn1">Início</a>
+            <a href="./qr-code.html" class="btn btn2">Qr Code</a>
+            <a href="./conversor.html" class="btn btn3">Conversor de Moedas</a>
+            <a href="./crypto.html" class="btn btn4">Criptografador</a>
+            <a href="./contact.html" class="btn btn5">Contato</a>
+        </nav>
+
+        <aside class="section-textxs-areas">
+            
+
+            <div class="caixa-text-crypto">
+                <h1>Criptografador</h1>
+            
+                <textarea class="text-area-mensagem" name="" id="text-area-mensagem" cols="30" rows="10" placeholder="Digite a mensagem a ser criptografada/descriptografada"></textarea>
+                <div class="div-botoes">
+                <button id="criptografia" class="convert-button">Criptografar</button>
+                <button id="descriptografia" class="convert-button">Descriptografar</button>
+                </div>
+                
+            </div>
+            <div class="caixa-text-crypto">
+                <h1>Mensagem</h1>
+                <textarea name="" id="text_output" cols="30" rows="10" placeholder="A mensagem processada aparecerá aqui"></textarea>
+                <div class="div">
+                <button class="convert-button" id="copiar">Copiar</button>
+                </div>
+                
+            </div>
+        </aside>
+
+        
+    </main>
+    <script src="./script-convert.js"></script>
+</body>
+
+</html>

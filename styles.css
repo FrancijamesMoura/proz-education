@@ -22,8 +22,8 @@ body {
     border-radius: 7px;
     padding: 16px 25px;
     transition: height 0.5s ease;
-    position: absolute;
-    margin-top: 90px;
+    /* position: absolute;
+    margin-top: 90px; */
 }
 
 
@@ -168,16 +168,16 @@ header p {
     max-width:600px; 
     height:auto; 
     float:none; 
-    margin:auto; 
+    /* margin:auto;  */
     padding:1em; 
-    margin-bottom:5em; 
+    /* margin-bottom:5em;  */
     border-radius:6px; 
     background:#fff; 
     box-shadow: 1px 0px 1.2px 0px #ccc; 
-    position: absolute;
+    /* position: absolute; */
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+    /* margin-top: 200px; */
     
 }
 .formularioContato:before { 
@@ -270,19 +270,6 @@ header p {
     font-family: "Protest Guerrilla", sans-serif;
 }
 
-.obrigado {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-image: url("./assets/fundo.png");
-    font-weight: 600;
-    font-size: 35px;
-    font-family: "Protest Guerrilla", sans-serif;
-    color: white;
-    position: absolute;
-}
 
 .btn-envia {
     width: 220px;
@@ -373,7 +360,7 @@ nav {
     justify-content: center;
     align-items: center;
     z-index: 0;
-    margin-bottom: 530px;
+    /* margin-bottom: 530px; */
     margin-left: 70px;
 }
 
@@ -587,11 +574,11 @@ section {
     border-radius: 7px;
     padding: 16px 35px;
     margin-bottom: 50px;
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 400px;
+    /* margin-top: 400px; */
 }
 
 
