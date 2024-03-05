@@ -6,17 +6,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles-convert.css">
 
-    
-    
     <title>Criptografador de Mensagens</title>
     
 </head>
 
 <body>
     <main>
-        <nav class="main-convert">
+        <nav class="convert-nav">
             <a href="./page-inicial.html" class="btn btn1">Início</a>
             <a href="./qr-code.html" class="btn btn2">Qr Code</a>
             <a href="./conversor.html" class="btn btn3">Conversor de Moedas</a>
@@ -24,32 +22,32 @@
             <a href="./contact.html" class="btn btn5">Contato</a>
         </nav>
 
-        <aside class="section-textxs-areas">
+        <section class="section-textxs-areas">
             
 
-            <div class="caixa-text-crypto">
+            <div class="caixa-text">
                 <h1>Criptografador</h1>
             
                 <textarea class="text-area-mensagem" name="" id="text-area-mensagem" cols="30" rows="10" placeholder="Digite a mensagem a ser criptografada/descriptografada"></textarea>
                 <div class="div-botoes">
-                <button id="criptografia" class="convert-button">Criptografar</button>
-                <button id="descriptografia" class="convert-button">Descriptografar</button>
+                <button id="criptografia" class="convert-button" onclick="criptografar()">Criptografar</button>
+                <button id="descriptografia" class="convert-button" onclick="descriptografar()">Descriptografar</button>
                 </div>
                 
             </div>
-            <div class="caixa-text-crypto">
+            <div class="caixa-text" id="caixa-text-output">
                 <h1>Mensagem</h1>
-                <textarea name="" id="text_output" cols="30" rows="10" placeholder="A mensagem processada aparecerá aqui"></textarea>
+                <textarea  id="text_output" cols="30" rows="10" placeholder="A mensagem processada aparecerá aqui"></textarea>
                 <div class="div">
-                <button class="convert-button" id="copiar">Copiar</button>
+                <button onclick="copiar()" class="convert-button" id="copiar">Copiar</button>
                 </div>
                 
             </div>
-        </aside>
+        </section>
 
         
     </main>
-    <script src="./script-convert.js"></script>
+    <script src="./script-crypto.js"></script>
 </body>
 
 </html>

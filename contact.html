@@ -23,38 +23,22 @@
 
             <h1 class="h1-form">Fale Conosco</h1>
             
-            <form action="https://formsubmit.co/dev1000grau@outlook.com" method="post" enctype="multipart/form-data">
-                
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="812fdf84-2c96-4d82-b94a-e7bbb62ffecd">
                 <label>
                     <span><i class="icon icon-user-1"></i> Nome</span>
-                    <input type="text" name="nome" placeholder="Digite seu nome" required>
+                    <input id="nome" placeholder="Digite seu nome" type="text" name="name" required>
                 </label>
-                
                 <label>
                     <span><i class="icon icon-email"></i> E-mail</span>
-                    <input type="email" name="email" placeholder="Digite seu E-mail" class="fade_8S">
+                    <input class="fade_8S" id="email" placeholder="Digite seu E-mail" type="email" name="email" required>
                 </label>
-
-                <label>
-                    <span><i class="icon icon-flag"></i> Assunto</span>
-                    <input type="text" name="assunto" placeholder="Digite seu assunto" required="">
-                </label>
-                
                 <label>
                     <span><i class="icon icon-comment"></i> Mensagem</span>
-                    <textarea name="mensagem" rows="3" placeholder="Digite sua mensagem" required=""></textarea> 
+                    <textarea id="mensagem" rows="3" placeholder="Digite sua mensagem" name="message" required></textarea>
                 </label>
-
-                <input type="hidden" name="_subject" value="Novo Contato!" />
-                <input type="text" name="_honey" style="display:none" />
-                <input type="hidden" name="_captcha" value="false" />
-                <input 
-                type="hidden" 
-                name="_next" 
-                value="http://127.0.0.1:5500/page-inicial.html"
-                >
-                <button id="btn-form" class="btn-envia" href="./page-inicial.html" type="submit" title="Enviar"><b class="icon icon-paper-plane-o"> Enviar</b></button>
-
+                <button id="btn-form" class="btn-envia" type="submit" title="Enviar"><b class="icon icon-paper-plane-o">Enviar</button>
             
             </form>
 
