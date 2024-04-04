@@ -27,4 +27,6 @@ function copiar() {
     textoCop.select();
     document.execCommand('copy');
     alert("Texto copiado.");
+    textoCop.value= ''
+
 }

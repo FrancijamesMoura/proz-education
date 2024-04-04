@@ -7,14 +7,7 @@
 }
 
 body {
-    /* width: 100%; */
-    
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* flex-direction: column; */
-    /* min-height: 100vh; */
     background-image: url("./assets/fundo.png");
-    /* gap: 15px; */
 }
 
 main {
@@ -28,13 +21,6 @@ main {
     gap: 50px;
 }
 
-/* main {
-    width: 375px;
-    border-radius: 20px;
-    background: #F4F4F4;
-    margin: 0 auto 40px;
-    padding: 44px 24px 23px;
-} */
 
 label {
     color: #777;
@@ -58,36 +44,6 @@ select,
     cursor: pointer;
 }
 
-.convert-button {
-    border-radius: 5px;
-    background: #00294B;
-    width: 327px;
-    height: 48px;
-    color: #FFF;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 18px;
-    cursor: pointer;
-    z-index: 0;
-
-}
-
-/* .convert-button:hover {
-    opacity: 0.8;
-}
-
-.convert-button:active {
-    opacity: 0.6;
-} */
-
-/* section {
-    border-radius: 20px;
-    border: 1px solid #00294B;
-    flex-shrink: 0;
-    margin-top: 36px;
-    padding: 12px;
-    
-} */
 
 .arrow-img {
     margin: 15px 0;
@@ -133,20 +89,16 @@ nav {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-
     font-size: 11px;
     font-weight: bold;
     color: #fff;
-
     margin: 0 15px;
     padding: 10px 35px;
-
     overflow: hidden;
-
     border: 2px solid #5f5fe3;
     border-radius: 5px;
-
     position: relative;
+    z-index: 1;
 
     &:before{
         content: '';
@@ -240,7 +192,9 @@ nav {
         }
     }
 }
-
+h1{
+    font-family: "Protest Guerrilla", sans-serif;
+}
 .caixa-text {    
     background: white;
     max-width: 410px;
@@ -249,25 +203,11 @@ nav {
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
-    /* height: 694px; */
-    /* transition: height 0.5s ease; */
-    /* position: absolute; */
-    /* margin-top: 50px; */    
-    /* top: 13%; */
-    /* order: -1; */
+    font-family: "Protest Guerrilla", sans-serif;
+    
     
 }
 
-/* .div-cripto {
-    /* background: white;
-    max-width: 410px;
-    border-radius: 7px;
-    padding: 16px 35px;
-    margin-bottom: 50px;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column; */
-/* } */ 
 
 .section-textxs-areas {
     display: flex;
@@ -283,12 +223,7 @@ nav {
 }
 
 .caixa-text{
-    /* background: white;
-    max-width: 410px;
-    border-radius: 7px;
-    padding: 16px 35px; */
-    /* margin-top: 20px; */
-    /* margin-bottom: 50px; */
+    font-family: "Protest Guerrilla", sans-serif;
     display: flex;
     gap: 15px;
     border-radius: 20px;
@@ -297,7 +232,7 @@ nav {
     
 }
 
-#copiar {
+.convert-button {
     width: 220px;
     height: 60px;
     border: none;
@@ -308,12 +243,14 @@ nav {
     position: relative;
     z-index: 0;
     border-radius: 10px;
-    /* margin-left: 75px; */
-    
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Protest Guerrilla", sans-serif;
     
 }
 
-#copiar:before {
+
+.convert-button:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
@@ -330,149 +267,20 @@ nav {
     border-radius: 10px;
 }
 
-#copiar:active {
+.convert-button:active {
     color: #000
 
 }
 
-#copiar:active:after {
+.convert-button:active:after {
     background: transparent;
 }
 
-#copiar:hover:before {
+.convert-button:hover:before {
     opacity: 1;
 }
 
-#copiar:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #0c0c48;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
-
-#criptografia {
-    width: 220px;
-    height: 60px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-    /* margin-left: 75px; */
-    
-    
-}
-
-#criptografia:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-}
-
-#criptografia:active {
-    color: #000
-
-}
-
-#criptografia,:active:after {
-    background: transparent;
-}
-
-#criptografia:hover:before {
-    opacity: 1;
-}
-
-#criptografia:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #0c0c48;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
-
-#descriptografia {
-    width: 220px;
-    height: 60px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-    /* margin-left: 75px; */
-
-    
-    
-}
-
-#descriptografia:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-}
-
-#descriptografia:active {
-    color: #000
-
-}
-
-#descriptografia,:active:after {
-    background: transparent;
-}
-
-#descriptografia:hover:before {
-    opacity: 1;
-}
-
-#descriptografia:after {
+.convert-button:after {
     z-index: -1;
     content: '';
     position: absolute;
